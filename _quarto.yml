@@ -1,0 +1,18 @@
+project:
+  type: default
+
+format:
+  revealjs:
+    theme: default
+    css: styles.css
+    transition: none
+    slide-number: true
+    code-fold: true
+    smaller: true
+    controls: true
+    hash: false
+
+
+execute:
+  echo: false
+  warning: false

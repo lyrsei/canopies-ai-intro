@@ -1,0 +1,23 @@
+/* css styles */
+:root {
+  --r-background-color: #fcfffa;
+  --r-main-color: #828282;
+  --r-heading-color: #87a07b;
+  --r-link-color: #9999cc;
+}
+
+@font-face {
+  font-family: "Zodiak";
+  src: url("fonts/Zodiak_Complete/Fonts/WEB/fonts/Zodiak-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("fonts/PlusJakartaSans_Complete/Fonts/WEB/fonts/PlusJakartaSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+#title-slide .title {
+  white-space: nowrap;
+}
