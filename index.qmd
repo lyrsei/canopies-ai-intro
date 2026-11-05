@@ -3,6 +3,10 @@ title: "A glimpse into AI concepts"
 author: "Presented by Yesmine Ayeb"
 institute: "This presentation was made in the context of a PlantGene Canopies meeting. It is intended as a synthesis of my own learning experience rather than an expert review."
 
+format:
+  revealjs:
+    hash: false
+
 execute:
   echo: false
   warning: false

@@ -3,6 +3,7 @@ project:
 
 format:
   revealjs:
+    hash: false
     theme: default
     css: styles.css
     transition: none
@@ -10,8 +11,6 @@ format:
     code-fold: true
     smaller: true
     controls: true
-    hash: false
-
 
 execute:
   echo: false
