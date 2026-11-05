@@ -186,11 +186,20 @@ Presented by Yesmine Ayeb
 </section>
 <section id="evaluation-metrics" class="slide level2">
 <h2>Evaluation Metrics</h2>
-<p><strong>Can we trust the model?</strong></p>
-<p>Evaluation metrics based on the model + Confusion Matrix</p>
-<p>➔ Sums up the performance of a classification model.</p>
-
-<img data-src="graphs/confusion_matrix.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<p><strong>How do we know whether a model performs well?</strong></p>
+<p>The choice of evaluation metrics depends on the prediction task.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Classification</strong></p>
+<p>Predicting discrete data.</p>
+<p><img data-src="graphs/confusion_matrix.png" style="width:70.0%"></p>
+<p>Accuracy | Precision | Recall | F1-score</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Regression</strong></p>
+<p>Predicting continuous data.</p>
+<p><img data-src="graphs/regression_metrics.png" style="width:90.0%"></p>
+</div></div>
+</section>
 <section id="neural-networks" class="slide level2">
 <h2>Neural Networks</h2>
 <p><strong>Input Layer</strong> (X1, X2, …,Xn): Captures raw input (variable/feature)</p>

@@ -13,7 +13,7 @@
 <g id="node1" class="node">
 <title>Underfitting</title>
 <path fill="#e1e9da" stroke="#87a07b" d="M412.2593,-101.3002C412.2593,-101.3002 12.2467,-101.3002 12.2467,-101.3002 6.2467,-101.3002 .2467,-95.3002 .2467,-89.3002 .2467,-89.3002 .2467,-11.8998 .2467,-11.8998 .2467,-5.8998 6.2467,.1002 12.2467,.1002 12.2467,.1002 412.2593,.1002 412.2593,.1002 418.2593,.1002 424.2593,-5.8998 424.2593,-11.8998 424.2593,-11.8998 424.2593,-89.3002 424.2593,-89.3002 424.2593,-95.3002 418.2593,-101.3002 412.2593,-101.3002"/>
-<text text-anchor="middle" x="212.253" y="-70.4" font-family="Plus Jakarta Sans" font-size="22.00" fill="#45613e">Underfitting:</text>
+<text text-anchor="middle" x="212.253" y="-70.4" font-family="Plus Jakarta Sans" font-size="22.00" fill="#45613e">Underfit:</text>
 <text text-anchor="middle" x="212.253" y="-44" font-family="Plus Jakarta Sans" font-size="22.00" fill="#45613e">The model is not powerful enough to capture</text>
 <text text-anchor="middle" x="212.253" y="-17.6" font-family="Plus Jakarta Sans" font-size="22.00" fill="#45613e">the underlying complexities of the data</text>
 </g>
@@ -21,7 +21,7 @@
 <g id="node2" class="node">
 <title>Overfitting</title>
 <path fill="#e1e9da" stroke="#87a07b" d="M922.8808,-101.3002C922.8808,-101.3002 479.381,-101.3002 479.381,-101.3002 473.381,-101.3002 467.381,-95.3002 467.381,-89.3002 467.381,-89.3002 467.381,-11.8998 467.381,-11.8998 467.381,-5.8998 473.381,.1002 479.381,.1002 479.381,.1002 922.8808,.1002 922.8808,.1002 928.8808,.1002 934.8808,-5.8998 934.8808,-11.8998 934.8808,-11.8998 934.8808,-89.3002 934.8808,-89.3002 934.8808,-95.3002 928.8808,-101.3002 922.8808,-101.3002"/>
-<text text-anchor="middle" x="701.1309" y="-70.4" font-family="Plus Jakarta Sans" font-size="22.00" fill="#45613e">Overfitting:</text>
+<text text-anchor="middle" x="701.1309" y="-70.4" font-family="Plus Jakarta Sans" font-size="22.00" fill="#45613e">Overfit:</text>
 <text text-anchor="middle" x="701.1309" y="-44" font-family="Plus Jakarta Sans" font-size="22.00" fill="#45613e">The model is too powerful and fits the training</text>
 <text text-anchor="middle" x="701.1309" y="-17.6" font-family="Plus Jakarta Sans" font-size="22.00" fill="#45613e">set too well (memorizing data instead of learning)</text>
 </g>
