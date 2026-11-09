@@ -393,12 +393,24 @@ Introduction of non linearity and to allow the network to learn more complex pro
 
 ---
 
+::: {.center}
+{{< video graphs/network-propagation.mp4 >}}
+:::
+
+---
+
 ## How a network “learns”
 
 **Cost function**: difference between the predicted outputs of a model and the actual target values
 
-**Aim**: minimize the cost function
-➔ Gradient descent 
+![](graphs/cost-of-difference.jpg){width="90%" fig-align="center"}
+
+---
+
+## How a network “learns”
+
+**Aim**: minimize the cost function 
+➔ Gradient descent $-\nabla C$ 
 
 ```{r}
 

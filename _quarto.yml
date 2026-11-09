@@ -13,6 +13,9 @@ format:
     controls: true
     revealjs-plugins:
       - pointer
+    pointer:
+      pointerSize: 10
+      color: "#D97979"
     
 
 execute:
