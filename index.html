@@ -128,6 +128,7 @@
       margin-right: 0; 
     }
   </style>
+  <script src="external-links.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -186,16 +187,25 @@ Presented by Yesmine Ayeb
 </section>
 <section id="evaluation-metrics" class="slide level2">
 <h2>Evaluation Metrics</h2>
-<p><strong>Can we trust the model?</strong></p>
-<p>Evaluation metrics based on the model + Confusion Matrix</p>
-<p>➔ Sums up the performance of a classification model.</p>
-
-<img data-src="graphs/confusion_matrix.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<p><strong>How do we know whether a model performs well?</strong></p>
+<p>The choice of evaluation metrics depends on the prediction task.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Classification</strong></p>
+<p>Predicting discrete data.</p>
+<p><img data-src="graphs/confusion_matrix.png" style="width:70.0%"></p>
+<p>Accuracy | Precision | Recall | F1-score</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Regression</strong></p>
+<p>Predicting continuous data.</p>
+<p><img data-src="graphs/regression_metrics.png" style="width:90.0%"></p>
+</div></div>
+</section>
 <section id="neural-networks" class="slide level2">
 <h2>Neural Networks</h2>
-<p><strong>Input Layer</strong> (X1, X2, …,Xn): Captures raw input (variable/feature)</p>
+<p><strong>Input Layer</strong> (<span class="math inline">\(x_1, x_2, \ldots, x_n\)</span>): Captures raw input (variables/features)</p>
 <p><strong>Hidden Layers</strong></p>
-<p><strong>Output layer</strong> (Y): Produces the final prediction</p>
+<p><strong>Output Layer</strong> (<span class="math inline">\(y\)</span>): Produces the final prediction</p>
 
 <img data-src="graphs/neural_network.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
 <section id="hidden-layers" class="slide level2">
@@ -206,10 +216,12 @@ Presented by Yesmine Ayeb
 <div class="quarto-layout-row">
 <div class="column quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <h4 id="weights">Weights</h4>
-<p>Multipliers attached to every input coming into a neuron (measures of how importance)</p>
+<p>Multipliers attached to every input coming into a neuron (measures of importance)</p>
 </div><div class="column quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <h4 id="biases">Biases</h4>
-<p>A constant value added to the weighted sum inside a neuron (thresholds of how easily a neuron is activate) High bias: Activates easily, even with weak inputs. Low/Negative bias: Requires an exceptionally strong signal to activate.</p>
+<p>A constant value added to the weighted sum inside a neuron (thresholds of how easily a neuron is activated)</p>
+<p><em>High bias</em>: Activates easily, even with weak inputs.</p>
+<p><em>Low/Negative bias</em>: Requires an exceptionally strong signal to activate.</p>
 </div></div>
 </div>
 <h4 id="activation-functions-a-fz">Activation Functions (<span class="math inline">\(a = f(z)\)</span>)</h4>

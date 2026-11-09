@@ -299,8 +299,8 @@ model_fit <- grViz('
     ]
 
     node [fillcolor = "#e1e9da", width = 4.2]
-    Underfitting [label = "Underfitting:\\nThe model is not powerful enough to capture\\nthe underlying complexities of the data"]
-    Overfitting  [label = "Overfitting:\\nThe model is too powerful and fits the training\\nset too well (memorizing data instead of learning)"]
+    Underfitting [label = "Underfit:\\nThe model is not powerful enough to capture\\nthe underlying complexities of the data"]
+    Overfitting  [label = "Overfit:\\nThe model is too powerful and fits the training\\nset too well (memorizing data instead of learning)"]
 
     # Forces them onto the same horizontal row without showing a line
     Underfitting -> Overfitting [style = invis]
@@ -322,23 +322,42 @@ writeLines(export_svg(model_fit), "graphs/model_fit.svg")
 
 ## Evaluation Metrics
 
-**Can we trust the model?**
+**How do we know whether a model performs well?**
 
-Evaluation metrics based on the model  + Confusion Matrix
+The choice of evaluation metrics depends on the prediction task.
 
-➔ Sums up the performance of a classification model.
+::: columns
+::: {.column width="50%"}
 
-![](graphs/confusion_matrix.png){width="80%" fig-align="center"}
+**Classification**
+
+Predicting discrete data.
+
+![](graphs/confusion_matrix.png){width="70%"}
+
+Accuracy | Precision | Recall | F1-score
+
+:::
+::: {.column width="50%"}
+
+**Regression**
+
+Predicting continuous data.
+
+![](graphs/regression_metrics.png){width="90%"}
+
+:::
+:::
 
 ---
 
 ## Neural Networks
 
-**Input Layer** (X1, X2, …,Xn): Captures raw input (variable/feature)
+**Input Layer** ($x_1, x_2, \ldots, x_n$): Captures raw input (variables/features)
 
 **Hidden Layers**
 
-**Output layer** (Y): Produces the final prediction
+**Output Layer** ($y$): Produces the final prediction
 
 ![](graphs/neural_network.png){width="80%" fig-align="center"}
 
@@ -354,14 +373,16 @@ $$z = \sum w_i x + b$$
 ::: {layout="[50, 50]"}
 ::: {.column}
 #### Weights
-Multipliers attached to every input coming into a neuron (measures of how importance)
+Multipliers attached to every input coming into a neuron (measures of importance)
 :::
 
 ::: {.column}
 #### Biases
-A constant value added to the weighted sum inside a neuron (thresholds of how easily a neuron is activate) 
-High bias: Activates easily, even with weak inputs.
-Low/Negative bias: Requires an exceptionally strong signal to activate.
+A constant value added to the weighted sum inside a neuron (thresholds of how easily a neuron is activated) 
+
+*High bias*: Activates easily, even with weak inputs.
+
+*Low/Negative bias*: Requires an exceptionally strong signal to activate.
 :::
 :::
 

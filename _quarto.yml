@@ -11,6 +11,9 @@ format:
     code-fold: true
     smaller: true
     controls: true
+    revealjs-plugins:
+      - pointer
+    
 
 execute:
   echo: false
